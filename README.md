@@ -1,6 +1,6 @@
 # app-package-name
 
-One Paragraph of project description goes here
+Shell to contain remotes 
 
 ## Getting Started
 
@@ -8,12 +8,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 To get started just run the following commands (allways from the `root` of the project):
 
-**Init Development Environment**
+**Configure the cookie**
+
+We have had some problems when configuring the login, so the solution is to log in to the development environment (https://comercial-pre.central.inditex.grp/iopcore), copy the session cookie from the application->cookies tab of the devtools and copy it to the following file:
 
 ```
-cd code
-npm run dev:setup
+code\config\DEV_ENV_COOKIE.json
 ```
+
+The content of the file should be:
+```
+{
+    "cookie": "session=cookie-here"
+}
+```
+
+Take into consideration that this cookie will expire and you should refresh it on a 401 error
 
 **Start SPA**
 
@@ -23,35 +33,13 @@ npm install
 npm run start
 ```
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ## Development
 
 > Make sure all this commands are executed from the `code` folder.
 
 ### Build & Packaging
 
-To build and package the application run:
-
-```
-npm run build
-```
-
-### Testing
-
-#### Unitary Testing
-
-We use [Jest](https://eslint.org/) along with [React Testing Library] to develop and execute the unitary code tests, to execute them just run:
-
-```
-npm run test
-```
+You dont need to build or test this project as long as is just a test project.
 
 ### Code Linting
 
