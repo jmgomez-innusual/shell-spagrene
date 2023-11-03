@@ -1,0 +1,100 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.productsPage {
+  width: 100%;
+  min-height: calc(100vh - 152px);
+}
+
+.productsPage__Container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 152px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (--viewport-l) {
+  .productsPage, .productsPage__Container {  
+    min-height: calc(100vh - 100px);
+  }
+}
+
+@media (--viewport-m) {
+  .productsPage, .productsPage__Container {  
+    min-height: calc(100vh - 100px);
+  }
+}
+
+@media (--viewport-xs-s) {
+  .productsPage, .productsPage__Container {  
+    min-height: calc(100vh - 214px);
+  }
+}
+
+.productsPage__ContainerHeader {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: var(--size8);
+}
+
+@media (--viewport-xs) {
+  .productsPage__ContainerHeader {
+    row-gap: var(--size3);
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+.productsPage__ContainerHeaderLeftSlot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @mixin font-title-l;
+  text-align: left;
+}
+
+.productsPage__ContainerHeaderRightSlot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  @mixin font-label-m-regular;
+  text-align: right;
+}
+
+@media (--viewport-xs) {
+  .productsPage__ContainerHeaderRightSlot {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .productsPageContainerHeader__rightSlot {
+    display: none;
+  }
+}
+
+.productsPage__ContainerCenter {
+  margin-bottom: var(--size8);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size8);
+  border-top: solid 1px var(--color-token-light-border-3);
+  border-bottom: solid 1px var(--color-token-light-border-3);
+}
+
+@media (--viewport-s) {
+  .productsPage__ContainerCenter {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (--viewport-xs) {
+  .productsPage__ContainerCenter {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}

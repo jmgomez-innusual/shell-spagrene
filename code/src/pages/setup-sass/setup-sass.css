@@ -1,0 +1,39 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.setupSass {
+  width: 100%;
+  height: calc(100vh - 64px);
+}
+
+.setupSass__Container {
+  /* padding: 0px var(--size8); */
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (--viewport-xs-s) {
+  .setupSass {
+    height: auto;
+  }
+
+  .setupSass__Container {
+    min-height: auto;
+  }
+}
+
+.setupSass__ContainerContent {
+  width: 100%;
+  /* margin-bottom: var(--size8); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.setupSass__ContainerMarkdown {
+  width: 100%;
+}

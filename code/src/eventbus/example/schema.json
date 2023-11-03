@@ -1,0 +1,24 @@
+{
+  "$defs": {
+    "SPAGRENE::count-state": {
+      "$description": "Informs the count state",
+      "$example": {
+        "featureId": "feature-id",
+        "count": 10
+      },
+      "type": "object",
+      "properties": {
+        "featureId": {
+          "$description": "Feature id",
+          "type": "string"
+        },
+        "count": {
+          "$description": "Actual count state of the feature",
+          "type": "number"
+        }
+      },
+      "required": ["featureId", "count"],
+      "additionalProperties": false
+    }
+  }
+}

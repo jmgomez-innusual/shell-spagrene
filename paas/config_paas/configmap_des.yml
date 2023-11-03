@@ -1,0 +1,19 @@
+amiga:
+  commons:
+    web:
+      devTools:
+        enabled: false
+      mockAuth:
+        enabled: false
+      oAuth2:
+        enabled: true
+        endpoint: https://des-openshift.axdesocp1.central.inditex.grp
+        appContext: /SPAGRENE
+      remotes:
+        aremote:
+          baseUrl: https://des-openshift.axdesocp1.central.inditex.grp/aremote/web
+        dev: true
+      endpoints:
+        wscproducts: https://des-openshift.axdesocp1.central.inditex.grp/SPAGRENE/api/wscproducts
+metadata:
+  jirakey: SPAGRENE

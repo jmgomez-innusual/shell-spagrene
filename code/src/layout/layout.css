@@ -1,0 +1,23 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.pg-layout__app-name {
+  @mixin font-heading-s;
+  color: var(--color-token-dark-content-1);
+}
+
+.appHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.appLogo {
+  min-width: 259px;
+  min-height: 105px;
+}
+
+.appLogo svg {
+  width: 100%;
+  height: 100%;
+}

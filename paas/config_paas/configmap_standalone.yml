@@ -1,0 +1,66 @@
+amiga:
+  commons:
+    web:
+      metrics:
+        providers:
+          appInsights:
+            enabled: false
+            metadata:
+              domain: "[[metadata.domain]]"
+              environment: "[[metadata.environment]]"
+              project_Id: "[[metadata.jirakey]]"
+              project_Name: "[[metadata.jiraprojectname]]"
+              platform: "[[metadata.platform]]"
+              slot: "[[metadata.slot]]"
+              tenant: "[[metadata.tenant]]"
+              version: "[[metadata.version]]"
+      endpoints:
+        srvgrene: https://localhost:3030/SPAGRENE/api/srvgrene
+        cmpitsws: https://localhost:3030/SPAGRENE/api/cmpitsws-jwt
+        specialDays: https://sscc.central.inditex.grp/amgfilemw/web/public/apps-special-days
+      resources:
+        brands: /api/rest/v1/private/brands
+        products: /api/rest/v1/products
+        productsByBrandId: /api/rest/v1/private/suggester/products
+        campaigns: /api/rest/v1/campaigns
+        campaignsByBrandTICs: /api/rest/v1/private/suggester/campaigns
+        sections: /api/rest/v1/private/suggester/sections
+        purchaseCenter: /api/rest/v1/private/suggester/purchase-center
+        grid: /api/rest/v1/grid
+        item: /api/rest/v1/item
+        itemSize: /api/rest/v1/item/size
+        market: /api/rest/v1/market
+        store: /api/rest/v1/store
+        physicalDistributionCenters: /api/rest/v1/physical-distribution-centers
+        rules: /api/rest/v1/rules
+        groupsOfLocations: /api/rest/v1/rules/query-builder/groups-of-locations
+        counterOfLocations: /api/rest/v1/rules/condition/result
+        affectedArticles: /api/rest/v1/rules/condition/item
+        blockingReasons: /api/rest/v1/blocking-reasons
+        distributionCenters: /api/rest/v1/dc
+        sizes: /api/rest/v1/master/size
+        subfamilies: /api/rest/v1/subfamilies
+        itemsOnline: /api/v1/online/items
+        buyers: /api/rest/v1/buyers
+        # Below are all resources related to "block edit page"
+        blockEditPageSession: /api/rest/v1/block/edit/session
+        blockEditPageItemBlock: /api/rest/v1/block/edit/item-block
+        blockEditPageBlocks: /api/rest/v1/block/edit/blocks/
+      oAuth2:
+        endpoint: https://localhost:3030
+        config:
+          loginUri: /api/auth/login
+          logoutUri: /api/auth/logout
+          permissionsUri: /api/auth/permissions/authdata?fetchMetadataTypes=ROLES
+          validateSessionUri: /api/auth/validate/session
+        appContext: /SPAGRENE
+        logLevel: WARN
+metadata:
+  appSSOKey: AppGestorReglasNegocio
+  domain: comdistrib
+  environment: local
+  platform: Openshift-Comercial Arteixo
+  slot: default
+  tenant: global
+  jirakey: SPAGRENE
+  jiraprojectname: spa-mfclientegestreglasneg

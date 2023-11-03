@@ -1,0 +1,31 @@
+# Apple
+.DS_Store
+
+# Editor
+.vscode
+
+# Build
+/dist
+
+# Local config
+.npmrc
+.yarnrc
+
+# Logs
+*.log
+*.heapsnapshot
+
+# Dependencies
+node_modules
+
+# Tests
+coverage
+test-report.json
+reports
+
+# Yarn
+.yarnclean
+yarn-error.log
+
+# eslint json report (Sonar)
+eslint-report.json

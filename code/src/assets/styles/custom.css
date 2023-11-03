@@ -1,0 +1,11 @@
+@import "@amiga-fwk-web/sewing/sewing-ds.css";
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+body {
+  overflow-x: hidden;
+  background: #FFF;
+}
+
+.body {
+  overflow: hidden;
+}

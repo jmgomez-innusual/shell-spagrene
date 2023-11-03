@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <title>Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="google" content="notranslate" />
+    <% const { amigaBasePath, state } = htmlWebpackPlugin.options %>
+    <link rel="apple-touch-icon" sizes="114x114" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/apple-icon-76x76.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/favicon-96x96.png">
+    <meta name="msapplication-TileImage" content="<%= amigaBasePath %>__AMIGA_ASSETS__/favicon/ms-icon-144x144.png">
+    <script>
+      var AMIGA_FWK_WEB_CONTEXT_PATH = "<%= amigaBasePath %>";
+      <% for (variable of Object.keys(state || {})) { %>
+      var <%= variable %> = <%= JSON.stringify(state[variable]) %>;
+      <% } %>
+    </script>
+    <% for (entry of htmlWebpackPlugin.files.css) { %>
+      <link href="<%= amigaBasePath %><%= entry.replace("?", "?v=") %>" rel="stylesheet"/>
+    <% } %>
+  </head>
+  <body>
+    <div id="app">
+      <div style="font-size: 10pt; position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%)">Loading...</div>
+    </div>
+    <script>
+      (function() {
+        if (/MSIE|Trident|Edge/.test(window.navigator.userAgent)) {
+          var appNode = document.getElementById("app");
+          appNode.id = "noapp"
+          appNode.innerHTML = '<div style="font-size: 12pt; line-height: 2em; position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); text-align: center; max-width: 40em;"><p><strong>This browser is not supported</strong><br/>Please use one of the supported browsers: Chrome (or browsers based on Chromium, e.g. Edge), Safari, Firefox.</p><hr style="border: none; background: #ddd; height: 1px"/><p><strong>Este navegador no está soportado</strong><br/>Por favor, utilice uno de los navegadores soportados: Chrome (o navegadores basados en Chromium, p. ej. Edge), Safari, Firefox.</p></div>'
+        }
+      })();
+    </script>
+    <% for (entry of htmlWebpackPlugin.files.js) { %>
+      <script type="text/javascript" src="<%= amigaBasePath %><%= entry.replace("?", "?v=") %>"></script>
+    <% } %>
+  </body>
+</html>

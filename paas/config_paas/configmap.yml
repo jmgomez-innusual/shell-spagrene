@@ -1,0 +1,9 @@
+amiga:
+  commons:
+    web:
+      devTools:
+        enabled: false
+      mockAuth:
+        enabled: false
+metadata:
+  jirakey: SPAGRENE

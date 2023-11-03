@@ -1,0 +1,38 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.appPageContainerCard {
+  cursor: pointer;
+  min-height: 100px;
+  padding: var(--size8);
+  border: solid 1px var(--color-token-light-border-3);
+  background: var(--color-token-light-background-1);
+  mix-blend-mode: difference;
+}
+
+.appPageContainerCard:hover {
+  border: solid 1px var(--color-token-light-border-2);
+  background: var(--color-token-light-background-inverse);
+}
+
+.appPageContainerCard__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--size3);
+  @mixin font-title-s;
+  color: var(--color-token-light-content-1);
+}
+
+.appPageContainerCard:hover .appPageContainerCard__title {
+  color: var(--color-token-light-content-inverse);
+}
+
+.appPageContainerCard__content {
+  @mixin font-body-l-light;
+  margin-top: var(--size3);
+  color: var(--color-token-light-content-3);
+}
+
+.appPageContainerCard:hover .appPageContainerCard__content {
+  color: var(--color-token-light-content-inverse);
+}

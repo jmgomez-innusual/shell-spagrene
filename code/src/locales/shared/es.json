@@ -1,0 +1,18 @@
+{
+  "amigaApplication.title": "Microfrontend Shell",
+  "app.name": "Microfrontend Shell",
+  "app.homePage.card.content.docs": "Aprende y descubre toda la información relevante que necesitas sobre las funciones de AMIGA Framework Web.",
+  "app.homePage.card.content.learn": "Encuentra Pathways y Codelabs relacionados con AMIGA Framework Web en el Devportal, y obten asi un paso a paso más detallado sobre funcionalidades importantes de AMIGA Framework Web.",
+  "app.homePage.card.content.designSystem": "Implementamos un Sistema de Diseño denominado Sewing, aprende aquí como usarlo en AMIGA Framework Web.",
+  "app.homePage.card.content.useSass": "Esta plantilla usa por defecto CSS y PostCSS, si quieres usar Sass como pre-procesador, aprende aqui a configurarlo.",
+  "app.homePage.card.title.docs": "Documentación",
+  "app.homePage.card.title.learn": "Aprender",
+  "app.homePage.card.title.designSystem": "Sistema de Diseño",
+  "app.homePage.card.title.useSass": "Quieres usar Sass?",
+  "app.homePage.type.label": "Microfrontend SPA / Shell",
+  "app.productsPage.title": "Productos",
+  "app.productsPage.counter": "{amount} Productos",
+  "app.productsPage.label.products": "Productos",
+  "app.setupSass.title": "Configurar Sass",
+  "app.webpackBaseConfiguration.title": "Configuración base de Webpack"
+}

@@ -1,0 +1,5 @@
+app:
+  dockerfile_template: com.inditex.otec.dockerfile:dockerfile-nginx-amg:1.2.0
+  dockerfile_from: itxbase/nginx:1.16-3
+  spa:
+    index_template_path: dist/index.html.tmpl

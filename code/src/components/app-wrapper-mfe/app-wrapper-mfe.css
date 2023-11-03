@@ -1,0 +1,71 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.appWrapperMicrofrontend {
+  width: 100%;
+  min-height: calc(100vh - 152px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size5);
+}
+
+@media (--viewport-l) {
+  .appWrapperMicrofrontend {  
+    min-height: calc(100vh - 100px);
+  }
+}
+
+@media (--viewport-xs-m) {
+  .appWrapperMicrofrontend {
+    min-height: calc(100vh - 214px);
+  }
+}
+
+.appWrapperMicrofrontendDevFallback {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size8);
+  background: var(--color-token-dark-background-inverse);
+}
+
+.containerDevFallback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--size3);
+  row-gap: var(--size2);
+}
+
+.containerDevFallback .containerDevFallback__label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @mixin font-label-l-medium;
+  text-align: right;
+  color: var(--color-token-dark-content-3);
+}
+
+.containerDevFallback .containerDevFallback__value {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @mixin font-body-l-light;
+  text-align: left;
+}
+
+.containerDevFallbackInitialPropsContainer {
+  margin-top: var(--size5);
+  width: 50%;
+  max-height: 400px;
+}
+
+@media (--viewport-xs-s) {
+  .containerDevFallbackInitialPropsContainer {
+    width: 100%;
+  }
+}

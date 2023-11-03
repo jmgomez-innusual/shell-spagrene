@@ -1,0 +1,85 @@
+supraenvironments:
+  - name: des
+    environments:
+      - name: des
+        platforms:
+          - name: c
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: o
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: m
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: e
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: r
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: c
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: i
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: a
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: l
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: a
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: r
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: t
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: e
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: i
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: x
+            tenants:
+              - name: global
+                slots:
+                  - name: default
+          - name: o
+            tenants:
+              - name: global
+                slots:
+                  - name: default

@@ -1,0 +1,9 @@
+version: '3.4'
+endpoints:
+  jira:
+    host: axinic.central.inditex.grp
+    path: /jira/rest/api/2/issue
+    server: https://axinic.central.inditex.grp/jira
+repo-type: github
+master-branch: main
+included-paths: [ '/code' ]

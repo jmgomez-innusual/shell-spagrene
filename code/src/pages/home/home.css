@@ -1,0 +1,232 @@
+@import "@amiga-fwk-web/sewing/foundations.css";
+
+.homePage {
+  width: 100%;
+  min-height: calc(100vh - 152px);
+}
+
+.homePageContainer {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 152px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.homePageContainerHeader {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: var(--size8);
+}
+
+@media (--viewport-l) {
+  .homePage, .homePageContainer {  
+    min-height: calc(100vh - 100px);
+  }
+}
+
+@media (--viewport-xs-m) {
+  .homePage {
+    min-height: auto;
+  }
+
+  .homePageContainer {
+    min-height: auto;
+    padding: 0px;
+  }
+
+  .homePageContainerHeader {
+    min-height: auto;
+    row-gap: var(--size3);
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+.homePageContainerHeader__inditexLogo {
+  max-height: var(--size4);
+}
+
+.homePageContainerHeader__leftSlot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @mixin font-label-m-regular;
+  text-align: left;
+}
+
+.homePageContainerHeader__getStarted {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--size3);
+  @mixin font-code-m;
+}
+
+.homePageContainerHeader__getStarted--type {
+  @mixin font-detail-m-regular;
+  color: var(--color-token-light-semantic-success);
+}
+
+.homePageContainerHeader__getStarted--default {
+  @mixin font-code-m;
+}
+
+.homePageContainerHeader__getStarted--code {
+  font-weight: bold;
+}
+
+.homePageContainerHeader__rightSlot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  @mixin font-label-m-regular;
+  text-align: right;
+}
+
+@media (--viewport-xs) {
+  .homePageContainerHeader__rightSlot {
+    display: none;
+  }
+}
+
+.homePageContainerHeader__byInditex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--size3);
+}
+
+.homePageContainerCenter {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size8);
+}
+
+@media (--viewport-xs-m) {
+  .homePageContainerCenter {
+    min-height: auto;
+  }
+}
+
+.homePageContainerAFW {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size5);
+}
+
+.homePageContainerAFW__by {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @mixin font-label-m-regular;
+  text-align: center;
+  gap: var(--size3);
+}
+
+.homePageContainerAFW__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--size3);
+}
+
+.homePageContainerAFW__titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.homePageContainerAFW__title {
+  @mixin font-title-l;
+}
+
+@media (--viewport-xs) {
+  .homePageContainerAFW__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--size3);
+  }
+
+  .homePageContainerAFW__titleContainer {
+    align-items: center;
+  }
+
+  .homePageContainerAFW__title {
+    text-align: center
+  }
+}
+
+.homePageContainerAFW__subtitle {
+  @mixin font-title-xs;
+  color: var(--color-token-light-content-3);
+}
+
+.homePageContainerAFW__type {
+  @mixin font-label-l-medium;
+  color: var(--color-token-light-semantic-success);
+}
+
+.homePageContainerAFW__version {
+  padding: var(--size3);
+  @mixin font-title-xl;
+  font-size: var(--typography-title-xl-size);
+  background: var(--color-token-light-background-2);
+  color: var(--color-token-light-content-1);
+  border-radius: var(--size5);
+}
+
+@media (--viewport-s) {
+  .homePageContainerAFW {
+    @mixin font-title-s;
+  }
+
+  .homePageContainerAFW__version {
+    @mixin font-title-l;
+  }
+}
+
+@media (--viewport-xs) {
+  .homePageContainerAFW {
+    flex-direction: column;
+  }
+
+  .homePageContainerAFW__subtitle {
+    display: none;
+  }
+
+  .homePageContainerAFW__version {
+    @mixin font-title-l;
+  }
+
+  .homePageContainerAFW__by {
+    display: flex;
+  }
+}
+
+.homePageContainerFooter {
+  display: block;
+}
+
+.homePageContainerCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: var(--size8);
+  column-gap: var(--size8);
+  margin: var(--size8) 0px;
+}
+
+@media (--viewport-xs-m) {
+  .homePageContainerCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

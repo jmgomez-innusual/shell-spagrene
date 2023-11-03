@@ -1,0 +1,25 @@
+amiga:
+  commons:
+    web:
+      devTools:
+        enabled: true
+      mockAuth:
+        enabled: false
+      remotes:
+        aremote:
+          baseUrl: http://localhost:3030/aremote/web
+        dev: true
+      endpoints:
+        wscproducts: /SPAGRENE/api/wscproducts
+      oAuth2:
+        endpoint: https://localhost:3030
+        config:
+          loginUri: /api/auth/login
+          logoutUri: /api/auth/logout
+          permissionsUri: /api/auth/permissions/authdata?fetchMetadataTypes=ROLES
+          validateSessionUri: /api/auth/validate/session
+        appContext: /SPAGRENE
+        logLevel: WARN
+metadata:
+  jirakey: SPAGRENE
+
