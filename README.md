@@ -41,26 +41,6 @@ npm run start
 
 You dont need to build or test this project as long as is just a test project.
 
-### Code Linting
-
-We use [ESLint](https://eslint.org/) to lint the code, to lint the code just run:
-
-```
-npm run lint
-```
-
-If you want to auto-fix the linting issues found, just run:
-
-```
-npm run lint:fix
-```
-
-If you want to format your code following the [Prettier standard](https://prettier.io/) just run:
-
-```
-npm run format
-```
-
 ### Git Hooks
 
 By default there is only configured the `pre-commit` hook, in this hook we just check for linting issues on the staged files following this pattern `(config|src|test)/**/*.(js|jsx)`.
