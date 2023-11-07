@@ -1,10 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require("fs");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path");
-const querystring = require('node:querystring');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const querystring = require("node:querystring");
 
 //  Proxying all from localhost:3030 to the DEV environment.
 const target = "https://apigw-comercial-des.axdesocp1.central.inditex.grp";
-// const target = "https://des-openshift.axdesocp1.central.inditex.grp";
 
 const commonProps = {
   changeOrigin: true,
@@ -19,7 +21,7 @@ const proxyCMPITSWS = {
   "/SPAGRENE/api/cmpitsws-jwt/api/v1/online/items": {
     ...commonProps,
     target,
-    onProxyReq: (proxyReq, req, _res) => {
+    onProxyReq: (proxyReq, req) => {
       if ((req.method === "POST" || req.method === "PUT") && req.body) {
         const writeBody = (bodyData) => {
           proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
@@ -36,7 +38,7 @@ const proxyCMPITSWS = {
     ...commonProps,
     target,
   },
-}
+};
 
 const proxyConfiguration = {
   ...proxyCMPITSWS,
@@ -83,7 +85,7 @@ const proxyConfiguration = {
   [`${webPath}/api/cmpitsws-jwt/*`]: {
     ...commonProps,
     target,
-    onProxyReq : (proxyReq, req, _res) => {
+    onProxyReq: (proxyReq, req, _res) => {
       if ((req.method === "POST" || req.method === "PUT")  && req.body) {
         const writeBody = (bodyData) => {
           proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
@@ -98,21 +100,13 @@ const proxyConfiguration = {
   [`${webPath}/api/capmaws-jwt/*`]: {
     ...commonProps,
     target,
-    onProxyReq: (proxyReq, req, res) => {
-      console.log("Proxy rule is running");
-      console.log("Redirecting request to:", target);
-
-      // Resto de la configuración del proxy
-
-      // Ejemplo de cómo imprimir información de la solicitud
-      console.log("Request URL:", req.url);
-    },
   },
+
   // /iopcore/api/auth/permissions/authdata?fetchMetadataTypes=ROLES
   "/SPAGRENE/api/auth/permissions/authdata": {
     ...commonProps,
     target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
-    onProxyReq: (proxyReq, req, res) => {
+    onProxyReq: (proxyReq) => {
       console.log("Proxy rule is running permissions");
 
       // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
