@@ -6,13 +6,13 @@ amiga:
       mockAuth:
         enabled: false
       remotes:
-        aremote:
-          baseUrl: http://localhost:3030/aremote/web
-        dev: true
+        blockedit:
+          baseUrl: http://localhost:3030/remote/web
+        dev: false
       endpoints:
         wscproducts: /SPAGRENE/api/wscproducts
       oAuth2:
-        endpoint: https://localhost:3030
+        endpoint: https://localhost:3029
         config:
           loginUri: /api/auth/login
           logoutUri: /api/auth/logout

@@ -19,8 +19,8 @@ const proxyCMPITSWS = {
   "/SPAGRENE/api/cmpitsws-jwt/api/v1/online/items": {
     ...commonProps,
     target,
-    onProxyReq : (proxyReq, req, _res) => {
-      if ((req.method === "POST" || req.method === "PUT")  && req.body) {
+    onProxyReq: (proxyReq, req, _res) => {
+      if ((req.method === "POST" || req.method === "PUT") && req.body) {
         const writeBody = (bodyData) => {
           proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
           proxyReq.write(bodyData);
@@ -84,9 +84,9 @@ const proxyConfiguration = {
     ...commonProps,
     target,
     onProxyReq : (proxyReq, req, _res) => {
-      if ((req.method === "POST" ||req.method === "PUT")  && req.body) {
+      if ((req.method === "POST" || req.method === "PUT")  && req.body) {
         const writeBody = (bodyData) => {
-          proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData));
+          proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
           proxyReq.write(bodyData);
         };
 
@@ -95,23 +95,25 @@ const proxyConfiguration = {
       }
     },
   },
-  [`${webPath}/api/capmaws-jwt/*`]: { ...commonProps, target,
-    onProxyReq: function(proxyReq, req, res) {
-      console.log('Proxy rule is running');
-      console.log('Redirecting request to:', target);
+  [`${webPath}/api/capmaws-jwt/*`]: {
+    ...commonProps,
+    target,
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running");
+      console.log("Redirecting request to:", target);
 
       // Resto de la configuración del proxy
 
       // Ejemplo de cómo imprimir información de la solicitud
-      console.log('Request URL:', req.url);
-    }, 
+      console.log("Request URL:", req.url);
+    },
   },
   // /iopcore/api/auth/permissions/authdata?fetchMetadataTypes=ROLES
   "/SPAGRENE/api/auth/permissions/authdata": {
     ...commonProps,
     target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
-    onProxyReq: function(proxyReq, req, res) {
-      console.log('Proxy rule is running permissions');
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running permissions");
 
       // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
       try {
@@ -122,7 +124,7 @@ const proxyConfiguration = {
       }
     },
     pathRewrite: {
-      '^/SPAGRENE/api/auth/permissions/authdata': '/iopcore/api/auth/permissions/authdata',
+      "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
     },
   },
   [`${webPath}/api/cmpbpsws-jwt/*`]: { ...commonProps, target },
@@ -130,7 +132,7 @@ const proxyConfiguration = {
   [`${webPath}/web/*/v1/user-info`]: {
     ...commonProps,
     target,
-    pathRewrite: (path) => path.replace(/.+api/, '/SPAGRENE/api/cmpbpsws-jwt/api'),
+    pathRewrite: (path) => path.replace(/.+api/, "/SPAGRENE/api/cmpbpsws-jwt/api"),
   },
 };
 

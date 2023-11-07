@@ -29,3 +29,5 @@ yarn-error.log
 
 # eslint json report (Sonar)
 eslint-report.json
+
+/config/DEV_ENV_COOKIE.json

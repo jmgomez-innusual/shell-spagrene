@@ -343,7 +343,7 @@ module.exports = (env, args) => {
 
       // Development server port
       // Set by the amiga-fwk-web server -p option or 3030 by default
-      port: process.env.AMG_CLI_PORT || 3030,
+      port: process.env.AMG_CLI_PORT || 3029,
 
       devMiddleware: {
         // Serve the app under the context path set by the --base-path CLI
