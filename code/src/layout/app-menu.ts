@@ -94,19 +94,10 @@ export const appMenu = (navigate: NavigateFunction) => [
         items: [
           {
             id: "feature-a",
-            name: "Feature A",
+            name: "Block edit",
             onClick: (e: MouseEvent, { api }: IOPMenuOptions) => {
               e.preventDefault();
-              navigate("/app/aremote/feature-a");
-              api.hideMenu();
-            },
-          },
-          {
-            id: "feature-b",
-            name: "Feature B",
-            onClick: (e: MouseEvent, { api }: IOPMenuOptions) => {
-              e.preventDefault();
-              navigate("/app/aremote/feature-b");
+              navigate("/app/remote/block-edit");
               api.hideMenu();
             },
           },

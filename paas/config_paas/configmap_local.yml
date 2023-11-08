@@ -6,8 +6,8 @@ amiga:
       mockAuth:
         enabled: false
       remotes:
-        blockedit:
-          baseUrl: http://localhost:3030/remote/web
+        spagrene:
+          baseUrl: http://localhost:3031/remote/web/
         dev: false
       endpoints:
         wscproducts: /SPAGRENE/api/wscproducts

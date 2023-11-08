@@ -24,13 +24,8 @@ export const AppRoutes = () => {
       <Route key="setup-sass" path="/app/config/setup-sass" element={<SetupSass />} />
       <Route
         key="pageFeatureA"
-        path="/app/aremote/feature-a"
-        element={<WorkshopRemote id="featureA" remote="Counter" title="Feature A" />}
-      />
-      <Route
-        key="pageFeatureB"
-        path="/app/aremote/feature-b"
-        element={<WorkshopRemote id="featureB" remote="Counter" title="Feature B" />}
+        path="/app/remote/block-edit"
+        element={<WorkshopRemote id="blockedit" name="spagrene" microfrontend="BlockEditTest" title="Block edit" />}
       />
       <Route key="unauthorized" path="/unauthorized" element={<UnauthorizedPage />} />
     </Routes>

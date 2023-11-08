@@ -9,12 +9,12 @@ import type { CountStatePayload } from "@/eventbus";
 
 type Props = {
   id: string;
-  remote: string;
+  microfrontend: string;
   title: string;
+  name: string;
 };
 
-export const WorkshopRemote: React.FC<Props> = ({ id, remote, title }) => {
-  const { counter } = useAppStore((state: AppState) => state.app[id]);
+export const WorkshopRemote: React.FC<Props> = ({ id, name, microfrontend, title }) => {
   const setCounter = useAppStore((state: AppState) => state.setCounter);
   const { listen } = useEventBus();
 
@@ -28,12 +28,11 @@ export const WorkshopRemote: React.FC<Props> = ({ id, remote, title }) => {
     <AppWrapperMfe
       key={id}
       id={id}
-      name="aremote"
-      microfrontend={remote}
+      name={name}
+      microfrontend={microfrontend}
       initialProps={{
         title,
         featureId: id,
-        defaultCounter: counter,
       }}
     />
   );
