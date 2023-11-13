@@ -25,7 +25,7 @@ export const AppRoutes = () => {
       <Route
         key="pageFeatureA"
         path="/app/remote/block-edit"
-        element={<WorkshopRemote id="blockedit" name="spagrene" microfrontend="BlockEditTest" title="Block edit" />}
+        element={<WorkshopRemote id="blockedit" name="spagrene" microfrontend="BlockEdit" title="Block edit" />}
       />
       <Route key="unauthorized" path="/unauthorized" element={<UnauthorizedPage />} />
     </Routes>

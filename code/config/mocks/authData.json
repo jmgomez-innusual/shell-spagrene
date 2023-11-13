@@ -1,0 +1,117 @@
+{
+    "appId": "IOPDISTRI",
+    "attributes": [
+        {
+            "key": "product_ids",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "purchase_center_ids",
+            "values": [
+                "33",
+                "12",
+                "34",
+                "13",
+                "16",
+                "28",
+                "18",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "30",
+                "20",
+                "10"
+            ]
+        },
+        {
+            "key": "user_section_type_id",
+            "values": [
+                "3"
+            ]
+        },
+        {
+            "key": "brand_ids",
+            "values": [
+                "11",
+                "22",
+                "12",
+                "23",
+                "14",
+                "15",
+                "16",
+                "18",
+                "19",
+                "0",
+                "1",
+                "100",
+                "2",
+                "101",
+                "3",
+                "4",
+                "6",
+                "7",
+                "8",
+                "9",
+                "20",
+                "10",
+                "21"
+            ]
+        },
+        {
+            "key": "section_type_ids",
+            "values": [
+                "1",
+                "2"
+            ]
+        },
+        {
+            "key": "user_brand_id",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "user_purchase_center_id",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "country_ids",
+            "values": [
+                "11",
+                "1",
+                "2"
+            ]
+        },
+        {
+            "key": "user_product_id",
+            "values": [
+                "1"
+            ]
+        }
+    ],
+    "login": "testaeospreax",
+    "permissions": [
+        "authenticated"
+    ],
+    "metadata": {
+        "roles": [
+            "authenticated"
+        ]
+    },
+    "userData": {
+        "description": "User for automated tests for AEOS (RUBEN MANUEL RODRIGUEZ PENA)",
+        "login": "testaeospreax",
+        "mail": "testaeospreax@inditex.com",
+        "name": "testaeospreax",
+        "department": "DISTRIBUCIÓN",
+        "domain": "central"
+    }
+}

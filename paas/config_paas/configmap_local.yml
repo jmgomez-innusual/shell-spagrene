@@ -7,7 +7,7 @@ amiga:
         enabled: false
       remotes:
         spagrene:
-          baseUrl: http://localhost:3031/remote/web/
+          baseUrl: https://localhost:3031/remote/web/
         dev: false
       endpoints:
         wscproducts: /SPAGRENE/api/wscproducts

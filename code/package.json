@@ -16,7 +16,7 @@
     "post:provisioning": "npm i",
     "project:analysis": "amiga-fwk-web project-analysis -o ./dist/project-analysis.yml",
 		"release:prepare": "npm run verify && npm run project:analysis && npm run package",
-    "start": "cross-env NODE_ENV=development AMG_HTTPS=true AMG_CLI_PORT=3029 AMG_CLI_HOST=0.0.0.0 AMG_CLI_JSON_API_DELAY=250 AMG_CLI_BASE_PATH=/SPAGRENE/web/ AMG_CLI_CONFIGMAP_PATH=./../paas/config_paas/configmap_local.yml BUILD_MODE=devServer node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./config/webpack.config.js --hot --mode development",
+    "start": "cross-env NODE_ENV=development AMG_CLI_DISABLE_JSON_API=true AMG_HTTPS=true AMG_CLI_PORT=3029 AMG_CLI_HOST=0.0.0.0 AMG_CLI_JSON_API_DELAY=250 AMG_CLI_BASE_PATH=/SPAGRENE/web/ AMG_CLI_CONFIGMAP_PATH=./../paas/config_paas/configmap_local.yml BUILD_MODE=devServer node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./config/webpack.config.js --hot --mode development",
     "start:standalone": "cross-env NODE_ENV=development AMG_CLI_PORT=3029 AMG_CLI_HOST=0.0.0.0 AMG_HTTPS=true AMG_CLI_API_DELAY=250 AMG_CLI_BASE_PATH=/SPAGRENE/web/ AMG_CLI_CONFIGMAP_PATH=./../paas/config_paas/configmap_standalone.yml BUILD_MODE=devServer node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./config/webpack.config.js --hot --mode development",
     "test": "npm run test:unit",
     "test:base": "cross-env NODE_ENV=test node --expose-gc --no-compilation-cache ./node_modules/jest/bin/jest.js --logHeapUsage --config ./config/jest.config.js --colors --rootDir . --passWithNoTests",

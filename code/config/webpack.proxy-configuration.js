@@ -55,11 +55,25 @@ const proxyConfiguration = {
     },
   },
 
+  "/api/rest/v1/block/edit/session/*": {
+    ...commonProps,
+    bypass: () => {
+      // Retorna true para evitar la solicitud al servidor de destino
+      return true;
+    },
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running for session endpoint");
+      res.send(JSON.parse(fs.readFileSync("./server/session.json")));
+    },
+  },
+
   "/api/rest/v1/*": {
     ...commonProps,
     target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
     headers: { Connection: "keep-alive" },
     onProxyReq: (proxyReq, req) => {
+      console.log("Proxy rule is running api/rest rule");
+
       //  DEV_ENV_COOKIE.json is used to set Cookie header dynamically from DEV env.
       try {
         const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
@@ -103,24 +117,65 @@ const proxyConfiguration = {
   },
 
   // /iopcore/api/auth/permissions/authdata?fetchMetadataTypes=ROLES
-  "/SPAGRENE/api/auth/permissions/authdata": {
-    ...commonProps,
-    target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
-    onProxyReq: (proxyReq) => {
-      console.log("Proxy rule is running permissions");
+  "^/SPAGRENE/api/auth/permissions/authdata*": {
 
-      // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
-      try {
-        const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
-        proxyReq.setHeader("Cookie", cookie);
-      } catch (error) {
-        console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
-      }
+    ...commonProps,
+    bypass: () => {
+      // Retorna true para evitar la solicitud al servidor de destino
+      return true;
     },
-    pathRewrite: {
-      "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
+    target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running for authdata endpoint");
+      res.send(JSON.parse(fs.readFileSync("./server/authData.json")));
     },
+
+    // target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+    // onProxyReq: (proxyReq) => {
+    //   console.log("Proxy rule is running permissions");
+
+    //   // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
+    //   try {
+    //     const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
+    //     proxyReq.setHeader("Cookie", cookie);
+    //   } catch (error) {
+    //     console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
+    //   }
+    // },
+    // pathRewrite: {
+    //   "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
+    // },
   },
+
+  // "/SPAGRENE/api/auth/permissions/authdata?fetchMetadataTypes=ROLES": {
+
+  //   ...commonProps,
+  //   // bypass: () => {
+  //   //   // Retorna true para evitar la solicitud al servidor de destino
+  //   //   return true;
+  //   // },
+  //   target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+  //   onProxyReq: (proxyReq, req, res) => {
+  //     console.log("Proxy rule is running for authdata endpoint 2");
+  //     res.send(JSON.parse(fs.readFileSync("./server/authData.json")));
+  //   },
+
+  //   // target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+  //   // onProxyReq: (proxyReq) => {
+  //   //   console.log("Proxy rule is running permissions");
+
+  //   //   // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
+  //   //   try {
+  //   //     const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
+  //   //     proxyReq.setHeader("Cookie", cookie);
+  //   //   } catch (error) {
+  //   //     console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
+  //   //   }
+  //   // },
+  //   // pathRewrite: {
+  //   //   "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
+  //   // },
+  // },
   [`${webPath}/api/cmpbpsws-jwt/*`]: { ...commonProps, target },
 
   [`${webPath}/web/*/v1/user-info`]: {

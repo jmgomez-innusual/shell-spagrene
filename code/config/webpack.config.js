@@ -339,11 +339,13 @@ module.exports = (env, args) => {
     devServer: {
       // Host to bind the development server to
       // Set by the amiga-fwk-web server -H option or 0.0.0.0 by default
-      host: process.env.AMG_CLI_HOST || "0.0.0.0",
+//      host: process.env.AMG_CLI_HOST || "0.0.0.0",
+      host: "0.0.0.0",
 
       // Development server port
       // Set by the amiga-fwk-web server -p option or 3030 by default
-      port: process.env.AMG_CLI_PORT || 3029,
+//      port: process.env.AMG_CLI_PORT || 3029,
+      port: 3029,
 
       devMiddleware: {
         // Serve the app under the context path set by the --base-path CLI
@@ -372,6 +374,7 @@ module.exports = (env, args) => {
           warnings: true,
           runtimeErrors: false,
         },
+        logging: "info",
       },
 
       // Enable HTTPS support (--https CLI param)
@@ -380,13 +383,14 @@ module.exports = (env, args) => {
           type: "https",
           options: {
             key: fs.readFileSync(path.join(__dirname, "certificate.key")),
-            cert: fs.readFileSync(path.join(__dirname, "certificate.crt"))
-
-//            key: fs.readFileSync(require.resolve("@amiga-fwk-web/tools-cli-certs/amiga-fwk-web-server.key")),
-//            cert: fs.readFileSync(require.resolve("@amiga-fwk-web/tools-cli-certs/amiga-fwk-web-server.crt")),
+            cert: fs.readFileSync(path.join(__dirname, "certificate.crt")),
           },
         },
       }),
+
+      proxy: {
+        ...devServerProxy,
+      },
 
       // Additional configuration for the express development server
       setupMiddlewares: (middlewares, { app }) => {
@@ -409,6 +413,7 @@ module.exports = (env, args) => {
         // Notice that the configmap file can be overridden using the --configmap CLI option
         devServer.mockConfig(app, projectPath(), process.env.AMG_CLI_BASE_PATH);
 
+
         // Add to the dev server the user defined endpoints from
         // <root>/config/setup.js. If missing, use the framework default ones
         // (only the /credentials endpoint will be defined)
@@ -422,15 +427,14 @@ module.exports = (env, args) => {
         // Enable the JSON mock backend (JSON API) unless disabled by the user
         if (!process.env.AMG_CLI_DISABLE_JSON_API) {
           // - response delay based on the CLI param
+          console.log("project path", projectPath());
+
           devServer.mockJsonBackend(app, projectPath(), {
             delay: process.env.AMG_CLI_API_DELAY,
           });
         }
 
         return middlewares;
-      },
-      proxy: {
-        ...devServerProxy
       }
 
     },
