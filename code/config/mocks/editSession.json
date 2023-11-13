@@ -1,0 +1,322 @@
+{
+    "item": {
+        "sizes": [
+            {
+                "sizeTIC": 102,
+                "sizeAS400": 2,
+                "sizeDescription": "S"
+            },
+            {
+                "sizeTIC": 103,
+                "sizeAS400": 3,
+                "sizeDescription": "M"
+            },
+            {
+                "sizeTIC": 104,
+                "sizeAS400": 4,
+                "sizeDescription": "L"
+            },
+            {
+                "sizeTIC": 105,
+                "sizeAS400": 5,
+                "sizeDescription": "XL"
+            }
+        ],
+        "doubleReferences": [],
+        "articleTIC": 3198549,
+        "colorTIC": 974,
+        "colorAS400": 800,
+        "model": 8851,
+        "quality": 17,
+        "productTIC": 1,
+        "campaignTIC": 34,
+        "purchaseCenterTIC": 1,
+        "codPurchaseCenter": "D",
+        "brandTIC": 1,
+        "sectionTypeTIC": 1,
+        "sectionTIC": 19,
+        "subSectionTIC": 67,
+        "buyer": {
+            "buyerTIC": 148,
+            "buyerCode": 1310,
+            "buyerName": "PTO BAS.(1310)"
+        },
+        "family": {
+            "familyTIC": 82,
+            "familyCode": 10,
+            "familyName": "JERSEY"
+        },
+        "subFamily": {
+            "subfamilyTIC": 11273,
+            "subfamilyCode": 686,
+            "subfamilyName": "PUNTO JERSEY"
+        }
+    },
+    "selectedLocationInfo": {
+        "locationTICs": [
+            6739,
+            3510
+        ],
+        "marketTICs": [
+            75
+        ],
+        "dc2LocationTICs": []
+    },
+    "blockedLocationInfo": null,
+    "dcs": [],
+    "app": "AppFenix",
+    "username": "your-user",
+    "role": "administrador",
+    "comercialReasons": [
+        {
+            "code": 25,
+            "description": "BLOQUEO JOIN LIFE",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 180,
+            "description": "CRITERIO SUBFAMILIA",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 40,
+            "description": "FILTRO CAMION TEMP.",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 22,
+            "description": "BLOQUEO DT",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 104,
+            "description": "RGL.DPTO.COMERCIAL",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 41,
+            "description": "BLOQ TDA.DEFINITIVO",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 181,
+            "description": "CRITERIO TALLA",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 183,
+            "description": "CRITERIO COLECCION",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 75,
+            "description": "ESTACIONALIDAD/SUBF",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 182,
+            "description": "CRITERIO COLOR",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 101,
+            "description": "RETIR CIAL ALM TNDA",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 153,
+            "description": "RGL.BLOQ TALLA",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 32,
+            "description": "CONTROL GESTION",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 14,
+            "description": "DONACION",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 80,
+            "description": "SIN REPARTO CD1",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 56,
+            "description": "DPTO. PRODUCTO",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 992,
+            "description": "EXCLUSION .COM",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 50,
+            "description": "COMPRA ESPECIAL",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 81,
+            "description": "SIN REPARTO",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 11,
+            "description": "BLOQ STOCK ALMACENES",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 58,
+            "description": "MOVIMIENTOS TIENDAS",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 51,
+            "description": "ADELANTO A MERCADOS",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 53,
+            "description": "BLOQUEO TALLAS",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 57,
+            "description": "DPTO. DE COMPRAS",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 60,
+            "description": "DEVO PROVEEDOR",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 4,
+            "description": "DPTO COMERCIAL",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 59,
+            "description": "BLOQUEO NO TRF",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 52,
+            "description": "PROBL CALIDAD",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 55,
+            "description": "DEVOLUCION TIENDA",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        },
+        {
+            "code": 54,
+            "description": "DPTO.DISTRIBUCIÓN",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Comercial"
+            }
+        }
+    ],
+    "otherReasons": [
+        {
+            "code": 990,
+            "description": "COMPLIANCE DISTRIB.",
+            "purchaseCenterTIC": 1,
+            "type": {
+                "description": "Other"
+            }
+        }
+    ]
+}

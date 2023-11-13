@@ -1,0 +1,159 @@
+{
+    "a": 1,
+    "appId": "SRVGRENE",
+    "attributes": [
+        {
+            "key": "id_tipo_seccion_usuario",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "id_producto_usuario",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "id_centro_compra",
+            "values": [
+                "1",
+                "2",
+                "3",
+                "14",
+                "4",
+                "16",
+                "17"
+            ]
+        },
+        {
+            "key": "marca_comercial",
+            "values": [
+                "P",
+                "B",
+                "V",
+                "Z",
+                "N"
+            ]
+        },
+        {
+            "key": "id_cadena_usuario",
+            "values": [
+                "1"
+            ]
+        },
+        {
+            "key": "id_empresa",
+            "values": [
+                "11",
+                "101",
+                "2",
+                "25",
+                "9",
+                "20"
+            ]
+        },
+        {
+            "key": "id_cadena",
+            "values": [
+                "1",
+                "2",
+                "4",
+                "6",
+                "7"
+            ]
+        },
+        {
+            "key": "id_producto",
+            "values": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "key": "id_tipo_seccion",
+            "values": [
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "key": "cod_centro_compra",
+            "values": [
+                "P",
+                "55",
+                "01",
+                "46",
+                "D",
+                "W",
+                "N"
+            ]
+        }
+    ],
+    "login": "josemggarr",
+    "permissions": [
+        "rule.directShipment.read",
+        "rule.directShipment.create",
+        "rule.directShipment.dsl.update",
+        "rule.compliance.create",
+        "rule.update",
+        "rule.compliance.dsl.read",
+        "rule.create",
+        "rule.directShipment.update",
+        "rule.rss.dsl.read",
+        "rule.compliance.delete",
+        "rule.directShipment.delete",
+        "rule.read",
+        "rule.rss.read",
+        "blockingReason.read",
+        "rule.generic.update",
+        "market.read",
+        "rule.fiber.create",
+        "rule.compliance.update",
+        "rule.dsl.update",
+        "rule.generic.delete",
+        "rule.rss.delete",
+        "blockEditPage.access",
+        "rule.fiber.read",
+        "rule.rss.dsl.update",
+        "rule.rss.update",
+        "rule.fiber.dsl.read",
+        "rule.dryRun.read",
+        "block.read",
+        "rule.dsl.read",
+        "rule.generic.create",
+        "rule.rss.create",
+        "rule.fiber.dsl.update",
+        "rule.generic.read",
+        "rule.compliance.read",
+        "rule.directShipment.dsl.read",
+        "rule.fiber.delete",
+        "rule.compliance.dsl.update",
+        "item.read",
+        "store.read",
+        "rule.delete",
+        "distributionCenter.read",
+        "rule.fiber.update"
+    ],
+    "metadata": {
+        "roles": [
+            "block_edit_page_user",
+            "administrador"
+        ]
+    },
+    "userData": {
+        "firstName": "Jose Manuel",
+        "lastName": "Gómez Garrido",
+        "description": "Dpto. Dirección Distribución",
+        "employeeId": "E011GPS24987",
+        "login": "josemggarr",
+        "mail": "josemggarr@ext.inditex.com",
+        "name": "Jose Manuel Gómez Garrido",
+        "company": "Innusual Tech Services Sl",
+        "department": "Dirección Distribución",
+        "domain": "central"
+    }
+}

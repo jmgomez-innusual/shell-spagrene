@@ -21,11 +21,18 @@ import Router from "@/components/router-integration/router";
 import loginBg from "./assets/img/login-bg.jpg";
 import MicrofrontendsDevTools from "@/components/microfrontend-dev-tools/microfrontend-dev-tools";
 import eventsSchemas from "@/eventbus";
+import AmigaLocationListener from "@amiga-fwk-web/components-routing/location-listener";
+import { useLocation } from "react-router-dom";
 
 const createLogger = () =>
   logger({
     transports: [consoleTransport()],
   });
+
+const LocationListener = () => {
+  const location = useLocation();
+  return <AmigaLocationListener location={location} />;
+};
 
 const Application = () => (
   <ConfigProvider>
@@ -39,6 +46,7 @@ const Application = () => (
                 <IntlProvider supportedLocales={getLocales()} messages={messages}>
                   <AuthSwitch layout={<Login backgroundUrl={loginBg} />}>
                     <Router>
+                      <LocationListener />
                       <Layout>
                         <AppRoutes />
                       </Layout>

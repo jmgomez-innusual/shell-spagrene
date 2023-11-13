@@ -106,20 +106,26 @@ const proxyConfiguration = {
   "/SPAGRENE/api/auth/permissions/authdata": {
     ...commonProps,
     target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
-    onProxyReq: (proxyReq) => {
-      console.log("Proxy rule is running permissions");
+    bypass: (req, res, proxyOptions) => {
+      // Retorna true para evitar la solicitud al servidor de destino
+      return true;
+    },
+    onProxyReq: (proxyReq, req, res) => {
+      // console.log("Proxy rule is running permissions");
 
-      // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
-      try {
-        const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
-        proxyReq.setHeader("Cookie", cookie);
-      } catch (error) {
-        console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
-      }
+      // // Agregar cabecera de cookie si el archivo DEV_ENV_COOKIE.json existe
+      // try {
+      //   const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
+      //   proxyReq.setHeader("Cookie", cookie);
+      // } catch (error) {
+      //   console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
+      // }
+      console.log("bypassing request /SPAGRENE/api/auth/permissions/authdata");
+      res.json(JSON.parse(fs.readFileSync(path.join(__dirname, "./mocks/authData.json"))));
     },
-    pathRewrite: {
-      "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
-    },
+    // pathRewrite: {
+    //   "^/SPAGRENE/api/auth/permissions/authdata": "/iopcore/api/auth/permissions/authdata",
+    // },
   },
   [`${webPath}/api/cmpbpsws-jwt/*`]: { ...commonProps, target },
 
@@ -127,6 +133,21 @@ const proxyConfiguration = {
     ...commonProps,
     target,
     pathRewrite: (path) => path.replace(/.+api/, "/SPAGRENE/api/cmpbpsws-jwt/api"),
+  },
+  "/api/rest/v1/block/edit/session/null": {
+    ...commonProps,
+    target: "https://des-openshift.axdesocp1.central.inditex.grp", // URL del servidor de destino
+    bypass: (req, res, proxyOptions) => {
+      // Retorna true para evitar la solicitud al servidor de destino
+      return true;
+    },
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("edit session response");
+      res.json(JSON.parse(fs.readFileSync(path.join(__dirname, "./mocks/editSession.json"))));
+    },
+    // pathRewrite: {
+    //   "/api/rest/v1/block/edit/session/*": "/bffiopcore/spagrene/api/srvgrene/api/rest/v1/block/edit/session/c1d2e042-9591-4062-beb5-7ad591cc3f49",
+    // },
   },
 };
 
