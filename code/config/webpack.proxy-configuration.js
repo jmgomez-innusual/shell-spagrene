@@ -55,17 +55,17 @@ const proxyConfiguration = {
     },
   },
 
-  "/api/rest/v1/block/edit/session/*": {
-    ...commonProps,
-    bypass: () => {
-      // Retorna true para evitar la solicitud al servidor de destino
-      return true;
-    },
-    onProxyReq: (proxyReq, req, res) => {
-      console.log("Proxy rule is running for session endpoint");
-      res.send(JSON.parse(fs.readFileSync("./server/session.json")));
-    },
-  },
+  // "/api/rest/v1/block/edit/session/*": {
+  //   ...commonProps,
+  //   bypass: () => {
+  //     // Retorna true para evitar la solicitud al servidor de destino
+  //     return true;
+  //   },
+  //   onProxyReq: (proxyReq, req, res) => {
+  //     console.log("Proxy rule is running for session endpoint");
+  //     res.send(JSON.parse(fs.readFileSync("./server/session.json")));
+  //   },
+  // },
 
   "/api/rest/v1/*": {
     ...commonProps,
@@ -117,17 +117,15 @@ const proxyConfiguration = {
   },
 
   // /iopcore/api/auth/permissions/authdata?fetchMetadataTypes=ROLES
-  "^/SPAGRENE/api/auth/permissions/authdata*": {
-
+  "/SPAGRENE/api/auth/permissions/authdata*": {
     ...commonProps,
-    bypass: () => {
-      // Retorna true para evitar la solicitud al servidor de destino
-      return true;
-    },
     target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
     onProxyReq: (proxyReq, req, res) => {
       console.log("Proxy rule is running for authdata endpoint");
-      res.send(JSON.parse(fs.readFileSync("./server/authData.json")));
+
+      res.send("END");
+
+      //res.send(JSON.parse(fs.readFileSync("./server/authData.json")));
     },
 
     // target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
