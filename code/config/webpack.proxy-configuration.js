@@ -55,46 +55,42 @@ const proxyConfiguration = {
     },
   },
 
-  // "/api/rest/v1/block/edit/session/*": {
-  //   ...commonProps,
-  //   bypass: () => {
-  //     // Retorna true para evitar la solicitud al servidor de destino
-  //     return true;
-  //   },
-  //   onProxyReq: (proxyReq, req, res) => {
-  //     console.log("Proxy rule is running for session endpoint");
-  //     res.send(JSON.parse(fs.readFileSync("./server/session.json")));
-  //   },
-  // },
-
-  "/api/rest/v1/*": {
+  "/api/rest/v1/block/edit/session/*": {
     ...commonProps,
-    target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
-    headers: { Connection: "keep-alive" },
-    onProxyReq: (proxyReq, req) => {
-      console.log("Proxy rule is running api/rest rule");
-
-      //  DEV_ENV_COOKIE.json is used to set Cookie header dynamically from DEV env.
-      try {
-        const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
-        proxyReq.setHeader("Cookie", cookie);
-      } catch (error) {
-        console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
-      }
-
-      if (req.body) {
-        let bodyData = JSON.stringify(req.body);
-
-        // in case if content-type is application/x-www-form-urlencoded -> we need to change to application/json
-        proxyReq.setHeader("Content-Type", "application/json");
-        proxyReq.setHeader("origin", target);
-        proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
-
-        // stream the content
-        proxyReq.write(bodyData);
-      }
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running for session endpoint (onproxyreq)");
+      res.send(JSON.parse(fs.readFileSync("./config/mocks/session.json")));
     },
   },
+
+  // "/api/rest/v1/*": {
+  //   ...commonProps,
+  //   target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
+  //   headers: { Connection: "keep-alive" },
+  //   onProxyReq: (proxyReq, req) => {
+  //     console.log("Proxy rule is running api/rest rule");
+
+  //     //  DEV_ENV_COOKIE.json is used to set Cookie header dynamically from DEV env.
+  //     try {
+  //       const cookie = JSON.parse(fs.readFileSync(path.join(__dirname, "DEV_ENV_COOKIE.json"), "utf8")).cookie;
+  //       proxyReq.setHeader("Cookie", cookie);
+  //     } catch (error) {
+  //       console.log("Failed to read or parse DEV_ENV_COOKIE.json", error);
+  //     }
+
+  //     if (req.body) {
+  //       let bodyData = JSON.stringify(req.body);
+
+  //       // in case if content-type is application/x-www-form-urlencoded -> we need to change to application/json
+  //       proxyReq.setHeader("Content-Type", "application/json");
+  //       proxyReq.setHeader("origin", target);
+  //       proxyReq.setHeader("Content-Length", Buffer.byteLength(bodyData));
+
+  //       // stream the content
+  //       proxyReq.write(bodyData);
+  //     }
+  //   },
+  // },
 
   [`${webPath}/api/cmpitsws-jwt/*`]: {
     ...commonProps,
@@ -123,9 +119,11 @@ const proxyConfiguration = {
     onProxyReq: (proxyReq, req, res) => {
       console.log("Proxy rule is running for authdata endpoint");
 
-      res.send("END");
+      // relative to code folder
+      const result = fs.readFileSync("./config/mocks/authData.json");
+      console.log(result);
 
-      //res.send(JSON.parse(fs.readFileSync("./server/authData.json")));
+      res.send(JSON.parse(result));
     },
 
     // target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
