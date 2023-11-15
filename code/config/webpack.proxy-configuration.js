@@ -57,8 +57,12 @@ const proxyConfiguration = {
 
   "/api/rest/v1/block/edit/session/*": {
     ...commonProps,
+    target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
     onProxyReq: (proxyReq, req, res) => {
+      // eslint-disable-next-line no-console
       console.log("Proxy rule is running for session endpoint (onproxyreq)");
+      // eslint-disable-next-line no-console
+      // eslint-disable-next-line no-console
       res.send(JSON.parse(fs.readFileSync("./config/mocks/session.json")));
     },
   },
