@@ -1,0 +1,24 @@
+[
+    {
+        "id": 3198549,
+        "model": 8851,
+        "quality": 17,
+        "description": "CONT-105-250-446-800-JERSEY BASICO MANGA CORTA              ",
+        "campaignId": 34,
+        "sectionTypeId": 1,
+        "campaignDescription": "V2023",
+        "buyers": [
+            {
+                "id": 5005,
+                "description": "PUNTO"
+            },
+            {
+                "id": 148,
+                "description": "PTO BAS.(1310)"
+            }
+        ],
+        "imageUrl": "https://axpreweb2.central.inditex.grp/LOCMConsultaImagenesArticulos/services/rest/image/V/2023/8851/17?handlers=EMCC,EMCCDR,EMCCA,EMCCADR,MAMC,MAMCDR,NOTFOUND&cc=1&prod=0&s=BIG&cad=1&tsec=1",
+        "imageRelativeUrl": "/LOCMConsultaImagenesArticulos/services/rest/image/V/2023/8851/17?handlers=EMCC,EMCCDR,EMCCA,EMCCADR,MAMC,MAMCDR,NOTFOUND&cc=1&prod=0&s=BIG&cad=1&tsec=1",
+        "hasDoubleReferences": true
+    }
+]

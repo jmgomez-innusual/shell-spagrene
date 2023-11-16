@@ -1,0 +1,826 @@
+{
+    "data": [
+        {
+            "storeTIC": 1410,
+            "storeName": "KDAR-OZ SHOPPING & ENTERTAINMENT CENTER",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3830,
+            "storeName": "S.PET-NEVSKIY PROSPECT",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6427,
+            "storeName": "ZEL-ZELENOPARK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9151,
+            "storeName": "VOR-CITY PARK GRAD",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1463,
+            "storeName": "ULY-AQUAMALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15928,
+            "storeName": "RSV-RU-OZON-ZARA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9007,
+            "storeName": "MOS-ZOLOTOI VAVILON",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3849,
+            "storeName": "KAL-EUROPE CENTER",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3971,
+            "storeName": "MOS-MOZAIKA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9712,
+            "storeName": "E_Z RUSIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6462,
+            "storeName": "MUR-MURMANSK MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3510,
+            "storeName": "MOS-FESTIVAL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3583,
+            "storeName": "MOS-GUM",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 2060,
+            "storeName": "AST-ASTRA PARK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1248,
+            "storeName": "TULA-TULA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3802,
+            "storeName": "MOS-FILION",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9267,
+            "storeName": "KAZ-PARK HOUSE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6480,
+            "storeName": "YAR-AURA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3582,
+            "storeName": "MOS-RYAZANSKY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3876,
+            "storeName": "YEKA-GREENWICH",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3863,
+            "storeName": "S.PET-CITY MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3866,
+            "storeName": "NIZH-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3848,
+            "storeName": "KDAR-CITY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6042,
+            "storeName": "RSVA-3840",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3760,
+            "storeName": "KRAS-PLANETA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 11905,
+            "storeName": "KUR-EUROPA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3829,
+            "storeName": "S.PET-MERTENS HOUSE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3828,
+            "storeName": "MOS-TROIKA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3628,
+            "storeName": "MOS-EUROPEISKY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9206,
+            "storeName": "VOR-GALLERY CHIZHOV",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15765,
+            "storeName": "RETURNS_TIENDAS_RUS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3439,
+            "storeName": "MOS-EUROPARK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6050,
+            "storeName": "RSVA-RUSIA_TURQUIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9165,
+            "storeName": "MOS-KUNTSEVO PLAZA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6203,
+            "storeName": "CHE-ALMAZ",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3745,
+            "storeName": "ROST-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 976,
+            "storeName": "LIP-EUROPA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1230,
+            "storeName": "MOS-RIVER MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 14613,
+            "storeName": "KDAR-MEGA ADYGEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15412,
+            "storeName": "RSV-RU-DEST-ZARA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9268,
+            "storeName": "CHE-RODNIK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6446,
+            "storeName": "BEL-CITY MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1226,
+            "storeName": "YAR-RIO",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9199,
+            "storeName": "MOS-CHOCOLATE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9063,
+            "storeName": "S.PET-LETO",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3383,
+            "storeName": "KHIM-MEGA KHIMKI",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3920,
+            "storeName": "NIZH-FANTASTIKA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9095,
+            "storeName": "MOS-KUZNETSKY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6207,
+            "storeName": "SAM-AMBAR",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6408,
+            "storeName": "TYU-CRYSTAL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 689,
+            "storeName": "MOS-COLUMBUS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1918,
+            "storeName": "W-RUS-EKA-ZAR",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3426,
+            "storeName": "MOS-TVERSKAYA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3998,
+            "storeName": "OMSK-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3442,
+            "storeName": "MOS-RIO SHOPPING",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1378,
+            "storeName": "MOS-VESNA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9166,
+            "storeName": "NOV-AURA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 11906,
+            "storeName": "VLA-ON KALININA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9209,
+            "storeName": "S.PET-G. CANYON",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 14302,
+            "storeName": "W-LFT-EXPORT RU",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6874,
+            "storeName": "S.PET-RADUGA PITER",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3450,
+            "storeName": "W-RUS-MOS-ZAR",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3498,
+            "storeName": "SHOWROOM MOSCU ZARA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15426,
+            "storeName": "RSVA_RUSIA_ZA 917362",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 10305,
+            "storeName": "MOS-RIO LENINSKIY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3864,
+            "storeName": "S.PET-MEGA PARNAS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13894,
+            "storeName": "YEKA-VEER MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 7420,
+            "storeName": "S.PET-EVROPOLIS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3746,
+            "storeName": "SAM-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13765,
+            "storeName": "PERM-PLANETA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3808,
+            "storeName": "KDAR-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9083,
+            "storeName": "MOS-GOOD ZONE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13015,
+            "storeName": "RSV3 EZ RUSIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 522,
+            "storeName": "IRK-KOMSOMOLL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 12898,
+            "storeName": "MOS-SALARIS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15954,
+            "storeName": "RSV-RU-WB-ZA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 14006,
+            "storeName": "MOS-PAVELETSKAYA PLAZA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13920,
+            "storeName": "MOS-SCHELKOVSKY SHOPPING CENTER",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3885,
+            "storeName": "MOS-METROPOLIS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9265,
+            "storeName": "KDAR-RED SQUARE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3666,
+            "storeName": "S.PET-MEGA IKEA DYBENKO",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3665,
+            "storeName": "MOS-MEGA IKEA BELAYA DACHA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9096,
+            "storeName": "VOL-VOROSHILOVSKY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9098,
+            "storeName": "MOS-VEGAS MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1288,
+            "storeName": "CHEB-KASKAD",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 10885,
+            "storeName": "MOS-GALEREYA KUTUZOVSKIY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13474,
+            "storeName": "SINT_TIENDAS_RUS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9066,
+            "storeName": "MOS-AFI MALL CITY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1274,
+            "storeName": "SUR-AURA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9326,
+            "storeName": "VLA-GUM",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15333,
+            "storeName": "W-RUS-SHEL-ZARA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 11904,
+            "storeName": "BAR-GALAKTIKA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3771,
+            "storeName": "MOS-LOTTE PLAZA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3733,
+            "storeName": "MOS-ATRIUM",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6445,
+            "storeName": "UFA-PLANETA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13518,
+            "storeName": "SOC-ADLER MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6208,
+            "storeName": "NOVOK-PLANETA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9629,
+            "storeName": "RSV EZ RUSIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13643,
+            "storeName": "MOS-EUROPOLIS ROSTOKINO",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1286,
+            "storeName": "NOV-GALEREYA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 4846,
+            "storeName": "BRY-AEROPARK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9164,
+            "storeName": "S.PET-GALERIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9205,
+            "storeName": "TOG-PARK HOUSE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3744,
+            "storeName": "NOV-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3440,
+            "storeName": "MOS-KAPITOLIY VERNADSKOGO",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 14064,
+            "storeName": "ROST-HORIZONT",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3759,
+            "storeName": "KAZ-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1234,
+            "storeName": "MOS-AVIAPARK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 4834,
+            "storeName": "SAM-KOSMOPORT",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1471,
+            "storeName": "MOS-OTRADA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1464,
+            "storeName": "MOS-JUNE MYTISHI",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3252,
+            "storeName": "MOS-MEGA TEPLY STAN",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3865,
+            "storeName": "YEKA-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3840,
+            "storeName": "MOS-OKHOTNY RYAD",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 11549,
+            "storeName": "IRK-SILVER IRKUTSK",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 15310,
+            "storeName": "W-RUS-KRAS-ZA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3803,
+            "storeName": "ROST-HORIZONT",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3268,
+            "storeName": "MOS-KAPITOLIY MARYINA ROSCHA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9307,
+            "storeName": "PERM-SEMYA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 10990,
+            "storeName": "MOS-RIVIERA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 13642,
+            "storeName": "KHAB-BROSKO MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9264,
+            "storeName": "PEN-COLLAGE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1275,
+            "storeName": "VLA-MEGATORG",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1300,
+            "storeName": "VOL-AQUARELLE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6204,
+            "storeName": "MOS-VEGAS CROCUS CITY",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9266,
+            "storeName": "ROST-BABILON",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 3997,
+            "storeName": "UFA-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1235,
+            "storeName": "RYA-M 5 MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 14809,
+            "storeName": "YEKA-MEGA IKEA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9101,
+            "storeName": "MOS-MEGAPOLIS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1287,
+            "storeName": "UFA-JUNE",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9084,
+            "storeName": "MOS-GOROD II",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1462,
+            "storeName": "SOC-MORE MALL",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 6739,
+            "storeName": "ALM-E_Z RUSIA",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 1421,
+            "storeName": "MOS-VEGAS MALL 3",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 11722,
+            "storeName": "STA-KOSMOS",
+            "marketTIC": 75,
+            "status": "open"
+        },
+        {
+            "storeTIC": 9207,
+            "storeName": "ORE-ARMADA",
+            "marketTIC": 75,
+            "status": "open"
+        }
+    ]
+}

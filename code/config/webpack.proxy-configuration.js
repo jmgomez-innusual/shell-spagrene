@@ -8,6 +8,19 @@ const commonProps = {
 };
 
 const proxyConfiguration = {
+  "/SPAGRENE/api/auth/permissions/authdata*": {
+    ...commonProps,
+    target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+    onProxyReq: (proxyReq, req, res) => {
+      console.log("Proxy rule is running for authdata endpoint");
+
+      // relative to code folder
+      const result = fs.readFileSync("./config/mocks/authData.json");
+
+      res.send(JSON.parse(result));
+    },
+  },
+
   "/SPAGRENE/api/auth/validate/session": {
     ...commonProps,
     target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/auth/validate/session",
@@ -32,16 +45,33 @@ const proxyConfiguration = {
     },
   },
 
-  "/SPAGRENE/api/auth/permissions/authdata*": {
+  "/api/cmpitsws-jwt/api/v1/online/items": {
     ...commonProps,
-    target: "https://comercial-pre.central.inditex.grp", // URL del servidor de destino
+    target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
     onProxyReq: (proxyReq, req, res) => {
-      console.log("Proxy rule is running for authdata endpoint");
+      // eslint-disable-next-line no-console
+      console.log("Proxy rule is running for online/items");
+      res.send(JSON.parse(fs.readFileSync("./config/mocks/items.json")));
+    },
+  },
 
-      // relative to code folder
-      const result = fs.readFileSync("./config/mocks/authData.json");
+  "/api/rest/v1/market": {
+    ...commonProps,
+    target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
+    onProxyReq: (proxyReq, req, res) => {
+      // eslint-disable-next-line no-console
+      console.log("Proxy rule is running for market");
+      res.send(JSON.parse(fs.readFileSync("./config/mocks/market.json")));
+    },
+  },
 
-      res.send(JSON.parse(result));
+  "/api/rest/v1/store": {
+    ...commonProps,
+    target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
+    onProxyReq: (proxyReq, req, res) => {
+      // eslint-disable-next-line no-console
+      console.log("Proxy rule is running for store");
+      res.send(JSON.parse(fs.readFileSync("./config/mocks/store.json")));
     },
   },
 };
