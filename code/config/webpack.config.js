@@ -397,6 +397,7 @@ module.exports = (env, args) => {
         // Setup CORS on LDE
         app.use(cors({
           origin: true,
+          credentials: true
         }));
         
         // Support for request body parsing (JSON and x-www-form-urlencoded)

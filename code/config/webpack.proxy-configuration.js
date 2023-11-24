@@ -33,6 +33,14 @@ const proxyConfiguration = {
     },
   },
 
+  // https://localhost:3029/bff-iopcore/spagrene/api/srvgrene/api/rest/v1/block/edit/session/4fc003fa-8882-4c3d-9b36-cd0a24b8921a
+  // to https://apigw-comercial-des.axdesocp1.central.inditex.grp/bff-iopcore/srvgrene/api/rest/v1/block/edit/session/{param_1}
+  //bff-iopcore context
+  "/bff-iopcore/spagrene/api/srvgrene/*": {
+    ...commonProps,
+    target: "https://apigw-comercial-des.axdesocp1.central.inditex.grp/bff-iopcore/srvgrene",
+  },
+
   "/api/rest/v1/block/edit/session/*": {
     ...commonProps,
     target: "https://des-openshift.axdesocp1.central.inditex.grp/spagrene/api/srvgrene",
